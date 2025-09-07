@@ -1,10 +1,8 @@
 import java.util.Scanner;
-
 interface Arma{
     int danioArma();
     String getNombre();
 }
-
 class Espada implements Arma{
     public int danioArma(){
         return 30;
@@ -13,7 +11,6 @@ class Espada implements Arma{
         return "Espada";
     }
 }
-
 class Bufanda implements Arma{
     public int danioArma(){
         return 20;
@@ -22,7 +19,6 @@ class Bufanda implements Arma{
         return "Bufanda";
     }
 }
-
 class Hacha implements Arma{
     public int danioArma(){
         return 40;
@@ -106,7 +102,6 @@ class Personaje {
         enemigo.recibirDanio(danio);
     }
 }
-
 class Enemigo extends Personaje{
     public Enemigo(String nombre, int vida){
         super(nombre, vida);
@@ -163,7 +158,6 @@ public class Deltarune2ver2{
         }while(opcion!='N');
         sc.close();
     }
-
     public static void turnoJugador(Scanner sc, Personaje pj, Enemigo jefe, Arma arma, Habilidad habilidadAtaque, Habilidad habilidadCurar){
         System.out.println("\nTurno de "+pj.getNombre());
         System.out.println("1) Atacar");
