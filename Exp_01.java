@@ -2,7 +2,7 @@ class Vehiculo{
     private String color;
     private  int anioFabricacion;
     public String getColor(){
-         return color;
+        return color;
     }
     public void setColor(String color){
         this.color=color;
@@ -11,7 +11,7 @@ class Vehiculo{
         return anioFabricacion;
     }
     public void setFabricacion(int fabricacion){
-        this.anioFabricacion = fabricacion;
+        this.anioFabricacion =fabricacion;
     }
     public Vehiculo(String color, int fabricacion){
         super();
@@ -22,7 +22,6 @@ class Vehiculo{
         System.out.println("acelerando");
     }
 }
-
 class Bicicleta extends Vehiculo{
     private double peso;
     public Bicicleta(String color, int anioFabricacion, double peso){
@@ -39,7 +38,6 @@ class Bicicleta extends Vehiculo{
         System.out.println("comienza a pedalear");
     }
 }
-
 class Coche extends Vehiculo{
     private String modelo;
     public Coche(String color, int anioFabricacion, String modelo){
@@ -56,12 +54,11 @@ class Coche extends Vehiculo{
         System.out.println("el motor esta funcionnando");
     }
 }
-
-public class Exp_01{
-        public static void main(String[]args){
-            Coche coche1=new Coche("rojo", 2015, "RJ45");
-            Bicicleta bici1=new Bicicleta("amarillo", 2020, 12.7);
-            bici1.acelerar();
-            coche1.acelerar();
-        }
+public class ACT1{
+    public static void main(String[]args){
+        Coche coche1=new Coche("rojo", 2015, "RJ45");
+        Bicicleta bici1=new Bicicleta("amarillo", 2020, 12.7);
+        bici1.acelerar();
+        coche1.acelerar();
     }
+}
